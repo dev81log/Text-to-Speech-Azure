@@ -1,4 +1,4 @@
-# Speech-to-text-conversion-Azure
+# Text-to-Speech -conversion-Azure
 Custom text-to-speech project using azure cognition AI
 
 In this project I used sdk version 6 of dotnet. 
