@@ -1,7 +1,15 @@
-# Text-to-Speech -conversion-Azure
-Custom text-to-speech project using azure cognition AI
+# Speech Synthesis Example
+This is an example of how to use the Microsoft Cognitive Services Speech library for speech synthesis.
+The application accepts text input and then uses the Text-to-Speech API to generate an audio file that is saved to a specified location.
 
-In this project I used sdk version 6 of dotnet. 
-Although the nuget package doesn't seem to support it, try to install with dotnet globaljson to confirm the version. 
-This Program File can speak and write to disk. Only by removing the audioConfig from the SpeechSynthesizer load will it be possible to hear the audio in run mode. 
-I just organized a few lines from the azure documentation, any questions go straight to the source on the Azure portal.
+## Getting Started
+Replace YourSubscriptionKey and YourServiceRegion with your own subscription key and service region values.
+Replace "file.wav" in AudioConfig.FromWavFileOutput("file.wav") with the desired file output format and directory save path.
+Replace "string that you want to speak" with the text you want to be spoken.
+Replace pt-BR-FranciscaNeural with the language of the voice you want to use.
+
+### Note
+Make sure you have the Microsoft.CognitiveServices.Speech package https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech installed.
+
+### Output
+The program will output the synthesized speech and save the audio to the specified file path.
